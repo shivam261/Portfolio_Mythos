@@ -18,7 +18,7 @@ export default function Navbar() {
       initial={{ y: -48, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed inset-x-0 top-0 z-50"
+      className="fixed inset-x-0 top-0 z-50 backdrop-blur-md"
     >
       <nav className="glass mx-auto mt-3 flex max-w-5xl items-center justify-between rounded-xl px-4 py-2.5 sm:px-6">
         <a href="#" className="font-mono text-sm text-foreground">
