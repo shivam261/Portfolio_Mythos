@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Design tokens — dark-first, single electric-blue accent.
+   Tailwind v4 reads @theme and exposes these as utility colors:
+   bg-background, text-foreground, text-accent, border-edge, etc.
+--------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0f;
+  --surface: #101018;
+  --foreground: #e6e8ee;
+  --muted: #8b90a1;
+  --accent: #38bdf8;
+  --accent-dim: rgba(56, 189, 248, 0.14);
+  --edge: rgba(139, 144, 161, 0.16);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-edge: var(--edge);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* Subtle dot-grid backdrop, applied to <body> via layout */
+.dot-grid {
+  background-image: radial-gradient(
+    rgba(139, 144, 161, 0.13) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+/* Glassmorphism card */
+.glass {
+  background: rgba(16, 16, 24, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--edge);
+}
+
+/* Accent glow for headings / key elements */
+.glow-text {
+  text-shadow: 0 0 24px rgba(56, 189, 248, 0.45);
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.3),
+    0 0 32px rgba(56, 189, 248, 0.12);
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
