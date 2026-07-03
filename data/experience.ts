@@ -33,9 +33,20 @@ export const experience: ExperienceEntry[] = [
       "Preparing for the DVA-C02 exam — serverless architectures, IAM, CI/CD on AWS, DynamoDB data modeling, and observability with CloudWatch and X-Ray.",
     skills: ["Lambda", "DynamoDB", "IAM", "CloudFormation", "CI/CD"],
   },
+    {
+    role: "Software Engineer (Consultant)",
+    organization: "Larsen and Toubro Mindtree",
+    type: "work",
+    status: "in-progress",
+    startDate: "Aug 2025",
+
+    description:
+      "Worked on a scalable distributed system for a platform team: built gRPC-based services for automated environment provisioning, improving service onboarding speed and operational scalability.",
+    skills: ["Python", "gRPC", "Langchain", "Langraph", "MCP", "PostgreSQL", "Terraform"],
+  },
   {
     role: "Software Engineer Intern",
-    organization: "Nimbus Cloud (Example Co.)",
+    organization: "Moonwyre Software Private Limited",
     type: "work",
     status: "completed",
     startDate: "Jun 2025",
@@ -68,10 +79,11 @@ export const experience: ExperienceEntry[] = [
   },
   {
     role: "B.Tech, Computer Science",
-    organization: "Example University",
+    organization: "Jaypee University of Engineering and Technology",
     type: "education",
-    status: "in-progress",
-    startDate: "2023",
+    status: "completed",
+    startDate: "2021",
+    endDate: "2025",
     description:
       "Coursework in distributed systems, computer networks, operating systems, databases, and algorithms.",
   },

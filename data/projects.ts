@@ -42,6 +42,7 @@ export const projects: Project[] = [
     techStack: [
       "AWS Lambda",
       "API Gateway",
+      "ECS",
       "DynamoDB",
       "CloudFront",
       "TypeScript",
@@ -55,12 +56,12 @@ export const projects: Project[] = [
       "Lambda",
       "DynamoDB",
     ],
-    tradeOffs: [
+/*     tradeOffs: [
       "Chose DynamoDB over RDS for single-digit-ms reads and effortless scaling, trading away flexible ad-hoc queries.",
       "On-demand capacity over provisioned: simpler ops and true scale-to-zero, at a slightly higher per-request cost.",
       "CloudFront caching for hot links reduces Lambda invocations, at the cost of a short propagation delay on updates.",
-    ],
-    githubUrl: "https://github.com/yourusername/serverless-url-shortener",
+    ], */
+    githubUrl: "https://github.com/shivam261/URL_Shortner",
     demoUrl: "https://example.com",
     // metrics are optional — delete this array if you have no real numbers yet
     metrics: [
