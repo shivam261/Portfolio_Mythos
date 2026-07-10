@@ -56,6 +56,25 @@ animation. All content is data-driven — see "Editable data source" below.
 - `status` (`"completed" | "in-progress" | "planned"`) renders a badge. Never
   hardcode or invent a status — it always comes from the data file.
 
+## Experience section behavior
+
+- `ExperienceSection.tsx` renders **three separate timelines**, one per entry
+  `type`, not a single combined list. The order and headings come from a
+  `groups` array at the top of the file (`work` → `certification` →
+  `education`). To reorder, rename, or hide a timeline, edit that array — the
+  section auto-skips any group with no matching entries in `data/experience.ts`.
+- A group's `title` is **optional**. The `work` group intentionally has no
+  `title`, so its timeline renders with no `# heading` and sits directly under
+  the section's "Professional Experience" title. `certification` and
+  `education` render `# Certifications` / `# Education` headings above theirs.
+- Experience cards **deliberately omit the type tag (WORK/CERT/EDU) and the
+  StatusBadge** — the entry type is already conveyed by the timeline heading +
+  the node icon on the rail, and completion status by the date range (an
+  in-progress entry shows "Present"). Do not re-add these to the experience
+  cards. (`StatusBadge` is still used by the project cards — that's intentional.)
+- The date range renders inline on the same baseline as the role (role left,
+  date right), so removing the badge/tag left no empty header row.
+
 ## Architecture notes for Claude
 
 - Homepage: `app/page.tsx` composes the section components in order
