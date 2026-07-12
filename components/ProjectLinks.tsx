@@ -15,7 +15,7 @@ export default function ProjectLinks({ project }: { project: Project }) {
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-accent"
+          className="inline-flex items-center gap-1.5 font-mono text-xs text-sky-300 transition-colors hover:text-accent"
         >
           <SocialIcon platform="github" className="h-4 w-4" />
           code
@@ -26,10 +26,10 @@ export default function ProjectLinks({ project }: { project: Project }) {
           href={project.demoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-accent"
+          className="inline-flex items-center text-yellow-500 gap-1.5 font-mono text-xs  transition-colors hover:text-accent"
         >
           <SocialIcon platform="website" className="h-4 w-4" />
-          demo
+          Live
         </a>
       )}
     </div>
