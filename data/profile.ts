@@ -3,7 +3,6 @@
  *
  * This is the only file to edit for: your name/title/tagline, About-section
  * bio, email, resume link, and social icons.
- *
  * Example shape:
  *   tagline: "I build systems that stay up."
  *   bio: ["First paragraph…", "Second paragraph…"]
