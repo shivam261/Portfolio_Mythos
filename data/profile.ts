@@ -22,13 +22,13 @@ export const profile: Profile = {
     "Currently preparing for the AWS Certified Developer – Associate certification and building projects that put those patterns into practice.",
   ],
   location: "Pune, India",
-  email: "shivam1705of@gmail.com",
+  email: "shivam.tripathi.codes@gmail.com",
   // Put your resume PDF in /public and point to it here, e.g. "/resume.pdf"
   resumeUrl: "/resume.pdf",
   socialLinks: [
     // EXAMPLE — replace URLs; delete any platform you don't use
     { platform: "github", label: "GitHub", url: "https://github.com/shivam261" },
     { platform: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/iamtripathi/" },
-    { platform: "email", label: "Email", url: "mailto:shivam1705of@gmail.com" },
+    { platform: "email", label: "Email", url: "mailto:shivam.tripathi.codes@gmail.com" },
   ],
 };
