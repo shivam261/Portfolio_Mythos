@@ -67,15 +67,15 @@ export const experience: ExperienceEntry[] = [
     skills: ["Python", "FastAPI", "Redis", "Docker"],
   },
   {
-    role: "AWS Certified Cloud Practitioner",
+    role: "AWS Certified AI Practitioner",
     organization: "Amazon Web Services",
     type: "certification",
     status: "completed",
-    startDate: "2024",
-    endDate: "2024",
+    startDate: "2026",
+    endDate: "2026",
     description:
-      "Foundational certification covering core AWS services, the shared responsibility model, pricing, and cloud architecture best practices.",
-    skills: ["AWS", "Cloud Fundamentals"],
+      "Foundational certification covering artificial intelligence and machine learning concepts, generative AI, responsible AI, and AWS AI services.",
+    skills: ["AWS", "Artificial Intelligence", "Generative AI"],
   },
   {
     role: "B.Tech, Computer Science",
