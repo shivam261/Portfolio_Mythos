@@ -27,13 +27,14 @@ export const experience: ExperienceEntry[] = [
     role: "AWS Certified Developer – Associate",
     organization: "Amazon Web Services",
     type: "certification",
-    status: "in-progress",
+    status: "completed",
     startDate: "2026",
+    endDate: "2026",
     description:
-      "Preparing for the DVA-C02 exam — serverless architectures, IAM, CI/CD on AWS, DynamoDB data modeling, and observability with CloudWatch and X-Ray.",
+      "AWS Certified Developer – Associate credential covering serverless architectures, IAM, CI/CD on AWS, DynamoDB data modeling, and observability with CloudWatch and X-Ray.",
     skills: ["Lambda", "DynamoDB", "IAM", "CloudFormation", "CI/CD"],
   },
-    {
+  {
     role: "Software Engineer (Consultant)",
     organization: "Larsen and Toubro Mindtree",
     type: "work",
