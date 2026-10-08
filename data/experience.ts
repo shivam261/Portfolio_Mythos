@@ -20,8 +20,6 @@
  */
 import type { ExperienceEntry } from "./types";
 
-// EXAMPLE DATA — placeholder timeline so you can preview the layout.
-// Replace with your real experience, certifications, and education.
 export const experience: ExperienceEntry[] = [
   {
     role: "AWS Certified Developer – Associate",
@@ -33,6 +31,11 @@ export const experience: ExperienceEntry[] = [
     description:
       "AWS Certified Developer – Associate credential covering serverless architectures, IAM, CI/CD on AWS, DynamoDB data modeling, and observability with CloudWatch and X-Ray.",
     skills: ["Lambda", "DynamoDB", "IAM", "CloudFormation", "CI/CD"],
+    badge: {
+      src: "/certifications/aws-certified-developer-associate-transparent.png",
+      alt: "AWS Certified Developer – Associate badge",
+      infoUrl: "https://aws.amazon.com/certification/certified-developer-associate/",
+    },
   },
   {
     role: "Software Engineer (Consultant)",
@@ -43,7 +46,11 @@ export const experience: ExperienceEntry[] = [
 
     description:
       "Worked on a scalable distributed system for a platform team: built gRPC-based services for automated environment provisioning, improving service onboarding speed and operational scalability.",
-    skills: ["Python", "gRPC", "Langchain", "Langraph", "MCP", "PostgreSQL", "Terraform"],
+    skills: ["Python", "gRPC", "LangChain", "LangGraph", "MCP", "PostgreSQL", "Terraform"],
+    impact: {
+      headline: "Faster service onboarding",
+      summary: "Built gRPC services that automate environment provisioning for a distributed platform.",
+    },
   },
   {
     role: "Software Engineer Intern",
@@ -55,6 +62,10 @@ export const experience: ExperienceEntry[] = [
     description:
       "Built internal tooling for a platform team: shipped a service that automated environment provisioning and cut onboarding time for new services from days to hours.",
     skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
+    impact: {
+      headline: "From days to hours",
+      summary: "Shipped internal provisioning tooling that reduced onboarding time for new services.",
+    },
   },
   {
     role: "Backend Developer (Freelance)",
@@ -66,6 +77,10 @@ export const experience: ExperienceEntry[] = [
     description:
       "Designed and deployed REST APIs and background job pipelines for small business clients, with a focus on reliability and low hosting cost.",
     skills: ["Python", "FastAPI", "Redis", "Docker"],
+    impact: {
+      headline: "APIs built for real businesses",
+      summary: "Designed and deployed REST APIs and background jobs with reliability and hosting cost in mind.",
+    },
   },
   {
     role: "AWS Certified AI Practitioner",
@@ -77,6 +92,11 @@ export const experience: ExperienceEntry[] = [
     description:
       "Foundational certification covering artificial intelligence and machine learning concepts, generative AI, responsible AI, and AWS AI services.",
     skills: ["AWS", "Artificial Intelligence", "Generative AI"],
+    badge: {
+      src: "/certifications/aws-certified-ai-practitioner-transparent.png",
+      alt: "AWS Certified AI Practitioner badge",
+      infoUrl: "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    },
   },
   {
     role: "B.Tech, Computer Science",

@@ -9,6 +9,7 @@
  * the card. Any group with no entries is skipped automatically.
  */
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { experience } from "@/data/experience";
 import type { ExperienceEntry, ExperienceType } from "@/data/types";
 import { fadeUp, slideInLeft, staggerContainer, viewportOnce } from "@/lib/animations";
@@ -57,15 +58,18 @@ function TimelineEntry({ entry }: { entry: ExperienceEntry }) {
         <TypeIcon type={entry.type} />
       </span>
 
-      <div className="glass rounded-xl p-5">
-        <div className="flex items-baseline justify-between gap-3">
+      <div className={`glass rounded-xl p-5 ${entry.badge ? "grid gap-6 sm:grid-cols-[160px_1fr] sm:items-center sm:p-6" : ""}`}>
+        {entry.badge && (
+          <div className="w-40 p-3">
+            <Image src={entry.badge.src} alt={entry.badge.alt} width={600} height={600} sizes="136px" className="h-auto w-full" />
+          </div>
+        )}
+        <div className="min-w-0">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
           <h3 className="font-semibold text-foreground">{entry.role}</h3>
           <span className="shrink-0 font-mono text-xs text-muted">
             {entry.startDate}
-            {" — "}
-            {entry.status === "in-progress"
-              ? "Present"
-              : entry.endDate ?? "Present"}
+            {entry.status === "in-progress" ? " — Present" : entry.endDate && entry.endDate !== entry.startDate ? ` — ${entry.endDate}` : ""}
           </span>
         </div>
         <p className="mb-3 font-mono text-sm text-muted">{entry.organization}</p>
@@ -83,6 +87,12 @@ function TimelineEntry({ entry }: { entry: ExperienceEntry }) {
             ))}
           </ul>
         )}
+        {entry.badge && (
+          <a href={entry.badge.infoUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-mono text-xs text-accent hover:underline">
+            About this certification <span aria-hidden>↗</span>
+          </a>
+        )}
+        </div>
       </div>
     </motion.li>
   );

@@ -7,7 +7,6 @@
  */
 import type { SkillGroup } from "./types";
 
-// EXAMPLE — replace with your real skills
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
@@ -19,10 +18,14 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Backend & Systems",
-    items: ["Node.js", "REST APIs", "PostgreSQL", "Redis", "Docker"],
+    items: ["Node.js", "FastAPI", "gRPC", "REST APIs", "PostgreSQL", "Redis", "Docker"],
   },
   {
     category: "Tools & Practices",
-    items: ["Git", "GitHub Actions", "Linux", "CI/CD"],
+    items: ["Terraform", "Git", "GitHub Actions", "Linux", "CI/CD"],
+  },
+  {
+    category: "AI & Retrieval",
+    items: ["LangChain", "LangGraph", "MCP", "Pinecone", "OpenAI API"],
   },
 ];

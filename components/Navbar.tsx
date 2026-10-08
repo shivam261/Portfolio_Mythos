@@ -27,7 +27,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden items-center gap-6 sm:flex">
+        <ul className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -47,7 +47,7 @@ export default function Navbar() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-8 w-8 flex-col items-center justify-center gap-1.5 sm:hidden"
+          className="flex h-8 w-8 flex-col items-center justify-center gap-1.5 md:hidden"
         >
           <span
             className={`h-px w-5 bg-foreground transition-transform ${open ? "translate-y-[3.5px] rotate-45" : ""}`}
@@ -66,7 +66,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.18 }}
-            className="glass mx-auto mt-2 max-w-5xl space-y-1 rounded-xl p-3 sm:hidden"
+            className="glass mx-auto mt-2 max-w-5xl space-y-1 rounded-xl p-3 md:hidden"
           >
             {navLinks.map((link) => (
               <li key={link.href}>
