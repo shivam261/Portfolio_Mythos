@@ -38,7 +38,7 @@ export const experience: ExperienceEntry[] = [
     },
   },
   {
-    role: "Software Engineer (Consultant)",
+    role: "Software Engineer",
     organization: "Larsen and Toubro Mindtree",
     type: "work",
     status: "in-progress",
@@ -46,19 +46,15 @@ export const experience: ExperienceEntry[] = [
 
     description:
       "Worked on a scalable distributed system for a platform team: built gRPC-based services for automated environment provisioning, improving service onboarding speed and operational scalability.",
-    skills: ["Python", "gRPC", "LangChain", "LangGraph", "MCP", "PostgreSQL", "Terraform"],
-    impact: {
-      headline: "Faster service onboarding",
-      summary: "Built gRPC services that automate environment provisioning for a distributed platform.",
-    },
+    skills: ["Python", "gRPC", "Spring Boot", "Java", "MCP", "PostgreSQL", "Terraform"],
   },
   {
-    role: "Software Engineer Intern",
-    organization: "Moonwyre Software Private Limited",
+    role: "Software Developer Intern",
+    organization: "Shree Sanvaliya Green Technology Pvt. Ltd",
     type: "work",
     status: "completed",
-    startDate: "Jun 2025",
-    endDate: "Dec 2025",
+    startDate: "Jan 2025",
+    endDate: "Jun 2025",
     description:
       "Built internal tooling for a platform team: shipped a service that automated environment provisioning and cut onboarding time for new services from days to hours.",
     skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
@@ -68,12 +64,12 @@ export const experience: ExperienceEntry[] = [
     },
   },
   {
-    role: "Backend Developer (Freelance)",
-    organization: "Self-employed",
+    role: "High Performance Computing Research Intern ",
+    organization: "Ramanujan Universe Supercomputing Center",
     type: "work",
     status: "completed",
-    startDate: "Jan 2025",
-    endDate: "May 2025",
+    startDate: "Jun 2024",
+    endDate: "Jul 2024",
     description:
       "Designed and deployed REST APIs and background job pipelines for small business clients, with a focus on reliability and low hosting cost.",
     skills: ["Python", "FastAPI", "Redis", "Docker"],
