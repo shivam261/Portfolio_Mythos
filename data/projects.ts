@@ -70,22 +70,7 @@ export const projects: Project[] = [
       { label: "Database", value: "AWS RDS, DynamoDB" },
     ],
   },
-  // Compact card projects (no diagram / lighter detail).
-  {
-    id: "Foody - Microservices Food Ordering Application",
-    title: "Foody - Microservices Food Ordering Application",
-    summary:
-      "A microservices-based food ordering application with a React frontend, Python backend, and Redis for caching.",
-    description: [
-      "A full-stack food ordering application built using a microservices architecture. The frontend is developed with React, while the backend services are implemented in Python. Redis is used for caching to improve performance and reduce database load.",
-    ],
-    status: "in-progress",
-    featured: false,
-    techStack: ["Python", "Redis", "FastAPI", "Docker","AWS Lambda", "React", "PostgreSQL"],
-    githubUrl: "https://github.com/shivam261/Food_ordering_Frontend",
-    demoUrl: "https://food.shivam-tripathi.com",
-   
-  },
+  // Compact card projects (no diagram / lighter detail). 
   {
     id: "ERP - Fulfill",
     title: "ERP - Fulfill",
@@ -128,6 +113,20 @@ export const projects: Project[] = [
     techStack: ["Firebase", "Next.js", "TypeScript", "shadcn-ui", "Tailwind CSS"],
     githubUrl: "https://github.com/shivam261/B2B-SAAS-DASHBOARD",
     demoUrl: "https://healthcare.shivam-tripathi.com",
+  },
+  {
+    id: "clinic-management-system-api",
+    title: "Clinic Management System API",
+    summary:
+      "A secure clinic management backend built with Go, Gin, PostgreSQL, Redis, and JWT-based access control.",
+    description: [
+      "Developed a Go REST API for managing doctors, reception staff, and patients using Gin, following clean architecture and the Repository Pattern. The service was structured to keep business logic separated from persistence, making the API easier to extend and maintain.",
+      "Implemented JWT-based authentication and role-based access control to protect patient and clinic workflows, and integrated Redis for session caching and API rate limiting to improve scalability and reduce repeated backend load.",
+    ],
+    status: "completed",
+    featured: false,
+    techStack: ["Go", "Gin", "PostgreSQL", "Redis", "JWT", "REST API"],
+    githubUrl: "https://github.com/shivam261/Makerble",
   },
 
 ];

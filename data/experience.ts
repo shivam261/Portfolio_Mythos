@@ -35,7 +35,7 @@ export const experience: ExperienceEntry[] = [
     skills: ["Lambda", "DynamoDB", "IAM", "CloudFormation", "CI/CD"],
   },
   {
-    role: "Software Engineer (Consultant)",
+    role: "Software Engineer",
     organization: "Larsen and Toubro Mindtree",
     type: "work",
     status: "in-progress",
@@ -43,29 +43,29 @@ export const experience: ExperienceEntry[] = [
 
     description:
       "Worked on a scalable distributed system for a platform team: built gRPC-based services for automated environment provisioning, improving service onboarding speed and operational scalability.",
-    skills: ["Python", "gRPC", "Langchain", "Langraph", "MCP", "PostgreSQL", "Terraform"],
+    skills: ["Python", "gRPC", "Spring Boot", "Java", "MCP", "PostgreSQL", "Terraform"],
   },
   {
-    role: "Software Engineer Intern",
-    organization: "Moonwyre Software Private Limited",
-    type: "work",
-    status: "completed",
-    startDate: "Jun 2025",
-    endDate: "Dec 2025",
-    description:
-      "Built internal tooling for a platform team: shipped a service that automated environment provisioning and cut onboarding time for new services from days to hours.",
-    skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
-  },
-  {
-    role: "Backend Developer (Freelance)",
-    organization: "Self-employed",
+    role: "Software Developer Intern",
+    organization: "Shree Sanvaliya Green Technology Pvt. Ltd",
     type: "work",
     status: "completed",
     startDate: "Jan 2025",
-    endDate: "May 2025",
+    endDate: "Jun 2025",
     description:
-      "Designed and deployed REST APIs and background job pipelines for small business clients, with a focus on reliability and low hosting cost.",
-    skills: ["Python", "FastAPI", "Redis", "Docker"],
+    "Optimized FastAPI response serialization by streamlining data conversion, reducing serialization overhead by 51% and improving API response efficiency; developed Java/Spring Boot REST APIs for worker records and dashboards with Spring Security authentication and role-based access control; wrote JUnit tests for Spring Boot services, achieving 80% unit test coverage; and deployed 6 services on AWS with Amazon SNS and SQS to support asynchronous message processing.",
+    skills: ["Python", "FastAPI", "Redis", "Docker", "Java", "Spring Boot", "AWS", "PostgreSQL", "JUnit "],
+  },
+  {
+    role: "High Performance Computing Research Intern ",
+    organization: "Ramanujan Universe Supercomputing Center",
+    type: "work",
+    status: "completed",
+    startDate: "Jun 2024",
+    endDate: "Jul 2024",
+    description:
+      "Developed AI agent workflows and orchestration pipelines using LangChain and LangGraph to automate research and operational tasks; collaborated on agent-based tooling for internal platform automation and environment provisioning, improving service onboarding speed and reducing manual effort.",
+    skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
   },
   {
     role: "AWS Certified AI Practitioner",
