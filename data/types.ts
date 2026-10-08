@@ -21,6 +21,9 @@ export interface Profile {
   title: string;
   /** One punchy line shown in the Hero under the title. */
   tagline: string;
+  /** Focus areas and selected skills shown in the landing overview. */
+  focus: string;
+  featuredSkills: string[];
   /** Longer paragraph(s) for the About section. Each string = one paragraph. */
   bio: string[];
   location: string;
@@ -80,6 +83,10 @@ export interface ExperienceEntry {
   endDate?: string;
   description: string;
   skills?: string[];
+  /** Concise outcome shown in the landing page's role overview. */
+  impact?: { headline: string; summary: string };
+  /** Official certification artwork, stored in /public. */
+  badge?: { src: string; alt: string; infoUrl: string };
 }
 
 /** A skill group, e.g. { category: "Cloud & AWS", items: ["Lambda", "DynamoDB"] } */

@@ -10,15 +10,15 @@
  */
 import type { Profile } from "./types";
 
-// EXAMPLE — replace every field with your real details
 export const profile: Profile = {
   name: "Shivam Tripathi",
   title: "Software Engineer",
-  tagline: "Building cloud-native, distributed systems that scale.",
+  tagline: "I build backend services, automate platform workflows, and turn cloud architecture into working products.",
+  focus: "Backend engineering · Cloud platforms · Distributed systems",
+  featuredSkills: ["Python", "TypeScript", "AWS", "gRPC", "PostgreSQL", "Terraform", "Docker", "FastAPI"],
   bio: [
-    // EXAMPLE — replace with your real bio. Each string renders as one paragraph.
-    "I'm an aspiring software engineer focused on cloud and distributed systems. I care about how systems behave under load, at scale, and when things fail.",
-    "Currently preparing for the AWS Certified Developer – Associate certification and building projects that put those patterns into practice.",
+    "I'm a software engineer focused on backend and cloud systems. Across consulting, an internship, and freelance work, I've built provisioning services, internal tooling, REST APIs, and background job pipelines.",
+    "I'm an AWS Certified Developer – Associate. My projects span serverless applications, microservices, data pipelines, and retrieval-augmented generation, with a focus on reliability, practical architecture, and operating cost.",
   ],
   location: "Pune, India",
   email: "shivam.tripathi.codes@gmail.com",

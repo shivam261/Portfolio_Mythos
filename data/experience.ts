@@ -20,8 +20,6 @@
  */
 import type { ExperienceEntry } from "./types";
 
-// EXAMPLE DATA — placeholder timeline so you can preview the layout.
-// Replace with your real experience, certifications, and education.
 export const experience: ExperienceEntry[] = [
   {
     role: "AWS Certified Developer – Associate",
@@ -33,6 +31,11 @@ export const experience: ExperienceEntry[] = [
     description:
       "AWS Certified Developer – Associate credential covering serverless architectures, IAM, CI/CD on AWS, DynamoDB data modeling, and observability with CloudWatch and X-Ray.",
     skills: ["Lambda", "DynamoDB", "IAM", "CloudFormation", "CI/CD"],
+    badge: {
+      src: "/certifications/aws-certified-developer-associate-transparent.png",
+      alt: "AWS Certified Developer – Associate badge",
+      infoUrl: "https://aws.amazon.com/certification/certified-developer-associate/",
+    },
   },
   {
     role: "Software Engineer",
@@ -53,8 +56,12 @@ export const experience: ExperienceEntry[] = [
     startDate: "Jan 2025",
     endDate: "Jun 2025",
     description:
-    "Optimized FastAPI response serialization by streamlining data conversion, reducing serialization overhead by 51% and improving API response efficiency; developed Java/Spring Boot REST APIs for worker records and dashboards with Spring Security authentication and role-based access control; wrote JUnit tests for Spring Boot services, achieving 80% unit test coverage; and deployed 6 services on AWS with Amazon SNS and SQS to support asynchronous message processing.",
-    skills: ["Python", "FastAPI", "Redis", "Docker", "Java", "Spring Boot", "AWS", "PostgreSQL", "JUnit "],
+      "Built internal tooling for a platform team: shipped a service that automated environment provisioning and cut onboarding time for new services from days to hours.",
+    skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
+    impact: {
+      headline: "From days to hours",
+      summary: "Shipped internal provisioning tooling that reduced onboarding time for new services.",
+    },
   },
   {
     role: "High Performance Computing Research Intern ",
@@ -64,8 +71,12 @@ export const experience: ExperienceEntry[] = [
     startDate: "Jun 2024",
     endDate: "Jul 2024",
     description:
-      "Developed AI agent workflows and orchestration pipelines using LangChain and LangGraph to automate research and operational tasks; collaborated on agent-based tooling for internal platform automation and environment provisioning, improving service onboarding speed and reducing manual effort.",
-    skills: ["TypeScript", "Node.js", "PostgreSQL", "Terraform"],
+      "Designed and deployed REST APIs and background job pipelines for small business clients, with a focus on reliability and low hosting cost.",
+    skills: ["Python", "FastAPI", "Redis", "Docker"],
+    impact: {
+      headline: "APIs built for real businesses",
+      summary: "Designed and deployed REST APIs and background jobs with reliability and hosting cost in mind.",
+    },
   },
   {
     role: "AWS Certified AI Practitioner",
@@ -77,6 +88,11 @@ export const experience: ExperienceEntry[] = [
     description:
       "Foundational certification covering artificial intelligence and machine learning concepts, generative AI, responsible AI, and AWS AI services.",
     skills: ["AWS", "Artificial Intelligence", "Generative AI"],
+    badge: {
+      src: "/certifications/aws-certified-ai-practitioner-transparent.png",
+      alt: "AWS Certified AI Practitioner badge",
+      infoUrl: "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    },
   },
   {
     role: "B.Tech, Computer Science",
